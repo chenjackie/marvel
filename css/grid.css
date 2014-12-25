@@ -1,0 +1,120 @@
+/* Grid system: width:1680px, per width 405px, gutter: 20px;
+======================================*/
+
+.grid-container{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgb(235,255,211);
+}
+	.grid-container > [class^="grid-"]:first-child {
+		margin-left: 3%;
+	}
+	
+
+	.grid-1{
+		width: 24.1%;
+	}
+	.grid-2{
+		width: 49.4%;
+	}
+	.grid-3{
+		width: 74.7%;
+	}
+	.grid-4{
+		width: 100%;
+	}
+	.grid-1 >p, .grid-2>p, .grid-3>p{
+		font-size: 1rem;
+	}
+
+/* Clearfix
+	================================ */
+
+	.grid-container:after,
+	.group:after {
+	  content: " ";
+	  display: table;
+	  clear: both;
+	}
+
+@media (max-width: 768px){
+	.grid-container > [class^="grid-"]{
+	min-width: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 2%;
+	padding-top: 2%;
+	width: auto;
+}
+	.grid-container p {
+		text-align: center;
+	}
+	.grid-container img, .grid-container #rectangle{
+		display: block;
+		margin: auto;
+	}
+}
+@media (min-width: 769px) and (max-width: 1279px){
+	.grid-container > [class^="grid-"]{
+	float:left;
+	min-width: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 3.8%;
+	margin-top: 0.7%;
+	margin-bottom: 0.8%;
+	width: auto;
+}
+	.grid-container p {
+		text-align: center;
+	}
+	.grid-container img, .grid-container #rectangle{
+		display: block;
+		margin: auto;
+	}
+}
+@media (min-width: 1280px) and (max-width: 1679px){
+	.grid-container > [class^="grid-"]{
+	float:left;
+	min-width: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 0.7%;
+	margin-bottom: 0.8%;
+	width: auto;
+}
+	.grid-container p {
+		text-align: center;
+	}
+	.grid-container img, .grid-container #rectangle{
+		display: block;
+		margin: auto;
+	}
+}
+@media (min-width: 1680px){
+	.grid-container > [class^="grid-"]{
+	float:left;
+	min-width: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 0.7%;
+	margin-bottom: 0.8%;
+	width: auto;
+}
+	.grid-container p {
+		text-align: center;
+	}
+	.grid-container img, .grid-container #rectangle{
+		display: block;
+		margin: auto;
+	}
+}
+
