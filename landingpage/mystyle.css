@@ -1,0 +1,46 @@
+.grid-container{
+	width: 100%;
+	max-width: 1920px;
+}
+
+/* -- clearfix hack -- */
+.row:before,
+.row:after{
+	content: :"";
+	display: table;
+	clear: both;
+}
+[class*='col-']{
+	float: left;
+	min-height: 1px;
+	padding: 24px;
+	background-color: #0a2d3d;
+}
+.col-1{
+	width: 11.4%;
+}
+.col-2{
+	width: 24%;
+}
+.col-3{
+	width:36.7%;
+}
+.col-4{
+	width:49.3%;
+}
+.col-5{
+	width: 62%;
+}
+.col-6{
+	width: 75%;
+}
+.col-7{
+	width: 87.3%;
+}
+.col-8{
+	width: 100%;
+}
+
+ul li{
+	text-decoration: none;
+}
